@@ -42,7 +42,7 @@ const Login = () => {
       };
 
       const { data } = await axios.post(
-        "/api/user/login",
+        "https://fullstack-chat-app-backend.onrender.com/api/user/login",
         { email, password },
         config
       );

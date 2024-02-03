@@ -25,7 +25,7 @@ const MyChats = ({ fetchAgain }) => {
         },
       };
       // console.log(`${user.token}`);
-      const { data } = await axios.get("/api/chat", config);
+      const { data } = await axios.get("https://fullstack-chat-app-backend.onrender.com/api/chat", config);
       setChats(data);
       // console.log(data);
     } catch (error) {
